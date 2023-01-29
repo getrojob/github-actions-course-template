@@ -8,8 +8,8 @@
     "src": "src"
   },
   "scripts": {
-    "build": "npx webpack --config ./src/webpack.config.js --mode production audit fix --force",
-    "dev": "npx webpack --config ./src/webpack.config.js --mode development --watch audit fix --force",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && npx webpack --config ./src/webpack.config.js --mode production",
+    "dev": "SET NODE_OPTIONS=--openssl-legacy-provider && npx webpack --config ./src/webpack.config.js --mode development --watch",
     "test": "npx standard && npx jest"
   },
   "author": "githubtraining",
