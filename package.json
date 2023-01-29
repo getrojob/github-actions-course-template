@@ -8,8 +8,8 @@
     "src": "src"
   },
   "scripts": {
-    "build": "npx webpack --config ./src/webpack.config.js --mode production",
-    "dev": "npx webpack --config ./src/webpack.config.js --mode development --watch",
+    "build": "npx webpack --config ./src/webpack.config.js --mode production audit fix --force",
+    "dev": "npx webpack --config ./src/webpack.config.js --mode development --watch audit fix --force",
     "test": "npx standard && npx jest"
   },
   "author": "githubtraining",
