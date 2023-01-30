@@ -8,8 +8,8 @@
     "src": "src"
   },
   "scripts": {
-    "build": "set cross-env NODE_OPTIONS=--openssl-legacy-provider && npx webpack --config ./src/webpack.config.js --mode production",
-    "dev": "set cross-env NODE_OPTIONS=--openssl-legacy-provider && npx webpack --config ./src/webpack.config.js --mode development --watch",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && npx webpack --config ./src/webpack.config.js --mode production",
+    "dev": "export NODE_OPTIONS=--openssl-legacy-provider && npx webpack --config ./src/webpack.config.js --mode development --watch",
     "test": "npx standard --fix && npx jest"
   },
   "author": "githubtraining",
