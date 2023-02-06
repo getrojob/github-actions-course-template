@@ -5,14 +5,13 @@ on:
     types: [opened, edited]
   pull_request:
     types: [opened, edited]
-  issues_comment:
+  issue_comment:
     types: [opened, edited]
     
 jobs:
   giphy-generator:
     runs-on: ubuntu-latest
     
-    steps:
     steps:
       - name: GIPHY Generator
         uses: iamhughes/giphy-generator@v1
